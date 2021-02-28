@@ -51,6 +51,7 @@ withdrawBtn.addEventListener('click', function(e) {
 
     if (!isNaN(value)) {
         updateSpantext(value, currentWithdraw);
+        updateSpantext(-1 * value, currentBalance)
         withdrawAmount.value = '';
     }
 });
